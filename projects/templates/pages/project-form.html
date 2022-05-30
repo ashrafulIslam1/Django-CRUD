@@ -1,0 +1,76 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class=" text-center" style="color: blue;">
+    <h1 class="display-4"><b>Project Form</b></h1>
+    <hr class="w-25 mx-auto" >
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12 col-sm-10 mx-auto shadow p-3 mb-5 bg-body rounded">
+                <div class="project-form">
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                    
+                        <div class="user-details">
+                    
+                            <div class="input-box">
+                                <span class="details"><b>Name:</b></span>
+                                <span class="details-Tbox">{{form.title}}</span>
+                            </div>
+                            <br>
+                
+                            <div class="input-box">
+                                <span class="details"><b>Bio:</b></span>
+                                <span class="details-bbox">{{form.bio}}</span>
+                            </div>
+                            <br>
+                
+                            <div class="input-box">
+                                <span class="details"><b>Description:</b></span>
+                                <span class="details-dbox">{{form.description}}</span>
+                            </div>
+                            <br>
+                
+                            <div class="input-box">
+                                <span class="details"><b>Qualification:</b></span>
+                                <span class="details-qbox">{{form.qualification}}</span>
+                            </div>
+                            <br>
+                
+                            <div class="input-box">
+                                <span class="details"><b>Institue:</b></span>
+                                <span class="details-ibox">{{form.institute}}</span>
+                            </div>
+                            <br>
+                
+                            <div class="input-box">
+                                <span class="details"><b>Skils:</b></span>
+                                <span class="details-sbox">{{form.skils}}</span>
+                            </div>
+                            <br>
+                
+                            <div class="input-box">
+                                <span class="details"><b>Contact:</b></span>
+                                <span class="details-cbox">{{form.contact}}</span>
+                            </div>
+                            <br>
+                
+                            <div class="input-box">
+                                <span class="details"><b>Image:</b></span>
+                                <span class="details-fbox">{{form.featured_image}}</span>
+                            </div>
+                        </div>
+                        <br> <br>
+                    
+                        <div class="submin-btnn">
+                            <input type="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+{% endblock %}

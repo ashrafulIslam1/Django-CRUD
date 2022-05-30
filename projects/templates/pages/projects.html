@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% extends 'main.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="container">
+  <br>
+  <p class="create-project"><a href="{% url 'create-project' %}" class="btn btn-warning"><b>Create Project</b></a></p>
+  <div class="row g-3">
+      {% for project in projects %}
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <img src="{{ project.featured_image }}" class="card-img-top" alt="{{project.title}}">
+              <div class="card-body">
+                <h5 class="card-title">{{project.title}}</h5>
+                <p class="card-text">{{project.bio}}</p>
+                <a href="{% url 'project' project.id %}" class="btn btn-primary">More about me</a>
+              </div>
+            </div>
+          </div>
+        
+      {% endfor %}
+ 
+    </div>
+  </div>
+
+
+</html>
+
+{% endblock content %}

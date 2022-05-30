@@ -1,0 +1,58 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<body>
+
+    <div class="single-project">
+
+        <div class="project-title">
+            <p>{{project.title}}</p>
+        </div>
+        
+        <div class="project-image">
+            <img src="{{project.featured_image.url}}" alt="Image">
+        </div>
+        
+        <div class="details">
+
+            <div class="description">
+                <h2 style="color: aqua; text-decoration:underline;">Description: </h2>
+                <p>{{project.description}}</p>
+            </div>
+            
+            <div class="qualification">
+                <h2 style="color: aqua; text-decoration:underline;">Qualification: </h2>
+                <p>{{project.qualification}}</p>
+            </div>
+    
+            <div class="institute">
+                <h2 style="color: aqua; text-decoration:underline;">Institute: </h2>
+                <p>{{project.institute}}</p>
+            </div>
+    
+            <div class="skils">
+                <h2 style="color: aqua; text-decoration:underline;">Skills: </h2>
+                <p>{{project.skils}}</p>
+            </div>
+    
+            <div class="contact">
+                <h2 style="color: aqua; text-decoration:underline;">Contact: </h2>
+                <p>{{project.contact}}</p>
+            </div>
+    
+            <div class="button">
+                <br>
+                <a href="{% url 'update-project' project.id %}" class="btn btn-warning"> <b>Update Project</b> </a>
+                <a href="{% url 'delete-project' project.id %}" class="btn btn-danger"> <b>Delete Project</b> </a>
+                <br> <br>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+
+{% endblock content %}
+

@@ -1,0 +1,101 @@
+
+*{
+    box-sizing: border-box;
+}
+.form-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(70, 21, 204);
+}
+
+.user-details{
+    flex-direction: column; 
+    flex-direction: row;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.details-Tbox{
+    /* padding-left: 65px; */
+    margin-left: 65px;
+    box-shadow: 5px 5px 5px 3px rgba(153,153,153,1);
+}
+.details-bbox{
+    /* padding-left: 65px; */
+    margin-left: 88px;
+    box-shadow: 5px 5px 5px 3px rgba(153,153,153,1);
+}
+.details-dbox{
+    margin-left: 13px;
+    box-shadow: 5px 5px 12px 2px rgba(153,153,153,1);
+}
+.details-ibox{
+    margin-left: 48px;
+    box-shadow: 5px 5px 5px 3px rgba(153,153,153,1);
+}
+.details-qbox{
+    box-shadow: 5px 5px 5px 3px rgba(153,153,153,1);
+}
+.details-sbox{
+    margin-left: 77px;
+    box-shadow: 5px 5px 5px 3px rgba(153,153,153,1);
+}
+.details-cbox{
+    margin-left: 45px;
+    box-shadow: 5px 5px 5px 3px rgba(153,153,153,1);
+}
+.details-fbox{
+    margin-left: 60px;
+    box-shadow: 5px 5px 5px 3px rgba(153,153,153,1);
+}
+
+.submin-btnn{
+    margin-left: 25px;
+}
+
+@media (max-width: 548px)
+{
+    .details-Tbox{
+        display: block; 
+        margin-left: 27px;
+        margin-top: 5px;
+    }
+    .details-bbox{
+        display: block; 
+        margin-left: 27px;
+        margin-top: 5px;
+    }
+
+    .details-dbox{
+        display: block; 
+         margin-left: 27px;
+         margin-top: 5px;
+     }
+    .details-ibox{
+        display: block; 
+         margin-left: 27px;
+         margin-top: 5px;
+     }
+    .details-qbox{
+        display: block; 
+         margin-left: 27px;
+         margin-top: 5px;
+     }
+    .details-sbox{
+        display: block; 
+         margin-left: 27px;
+         margin-top: 5px;
+     }
+    .details-cbox{
+        display: block; 
+         margin-left: 27px;
+         margin-top: 5px;
+     }
+     .details-fbox{
+        
+         margin-left: 27px;
+         margin-top: 5px;
+     }
+
+}
+
