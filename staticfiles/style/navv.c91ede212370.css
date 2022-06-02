@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    height: 90px;
+    width: 100%;
+    background: #3d4752;
+    
+}
+
+.nav-title{
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    padding:0 35px;
+    line-height: 80px;
+}
+
+.create-project{
+    background-color: aquamarine;
+}
+@media (min-width: 322px) and (max-width: 423px) 
+{
+    .nav-title{
+        font-size: 45px; 
+    }
+}
+@media (min-width: 322px) and (max-width: 358px) 
+{
+    .nav-title{
+        font-size: 38px; 
+    }
+}
+@media (min-width: 299px) and (max-width: 322px)
+{
+    .nav-title{
+        font-size: 30px; 
+        text-align: center;
+    } 
+}
+@media (max-width: 299px)
+{
+    .nav-title{
+        font-size: 30px; 
+        text-align: center;
+    } 
+}
+
+
